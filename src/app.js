@@ -5,6 +5,7 @@ const getLocation = require('./utils/getLocation')
 const getWeather = require('./utils/getWeather')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewsPath = path.join(__dirname,'../templates/views')
@@ -35,6 +36,9 @@ app.get('/about',(req, res) => {
 app.get('/help', (req, res) => {
     res.render('help')
 })
+// app.get('/index',(response, request) => {
+//     res.render(about.hbs)$
+// })
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
