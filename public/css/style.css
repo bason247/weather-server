@@ -1,0 +1,13 @@
+body {
+    color: red;
+    font-family:  Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0 160px;
+}
+
+footer {
+    color: rosybrown;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
