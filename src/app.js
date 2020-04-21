@@ -80,4 +80,4 @@ app.get('*', (req, res) => {
 console.log(publicDirectoryPath)
 
 const address =
-app.listen(3000)
+app.listen(port)
